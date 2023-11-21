@@ -1,0 +1,184 @@
+body {
+    background-color: #bad;
+    margin: 0;
+}
+footer {
+    background-color: #2f55a4;
+    grid-area: footer;
+}
+footer p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+footer a {
+    color: white;
+    display:inline-block;
+	margin-right:10px;
+    text-align: center;
+}
+/* footer a i {
+    display: flex;
+    text-align: center;
+    margin-left: 100px;
+} */
+/* .bi bi-facebook {
+    width: 50px;
+    height: 50px;
+} */
+aside {
+    background-color: #E2E2E2;
+    grid-area: aside;
+    display: flex;
+    justify-content: auto;
+}
+nav {
+    background-color: #2f55a4;
+    grid-area: nav;
+}
+.title {
+    display: flex;
+    padding: 15px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 500px;
+}
+.title a {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+   
+}
+.barra-nav {
+    display: flex;
+    padding: 20px;
+    text-align: right;
+    margin-left:75%;
+}
+.barra-nav a {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    padding: 10px;
+    font-size: 20px;
+}
+main {
+    background-color: whitesmoke;
+    grid-area: main;
+}
+label {
+    font-family: 'Montserrat', sans-serif;
+   
+}
+.grid-container {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4em 4em 4em;
+    grid-template-areas: "nav" "nav" "nav"
+                         "aside" "main" "main"
+                         "footer" "footer" "footer";
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+/* @media (min-width: 576px) {
+    .grid-container {
+        grid-template-columns: 4em 1fr;
+        grid-template-rows: 4em 1fr 4em;
+        grid-template-areas: "nav nav" "aside main" "footer footer";
+    }
+} */
+.contenedor-tarjetas {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 500px;
+    text-align: center;
+    padding: 20px;
+}
+img {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: #25527B;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    height: 40px;
+    width: 40%;  
+}
+
+h2 {
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+p {
+    color: #666;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.content {
+    display: grid;
+    grid-template-areas: "tarjeta-1 tarjeta-2 tarjeta-3"
+                         "tarjeta-4 tarjeta-5 tarjeta-6";                  
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    gap: 10px;             
+}
+
+.tarjeta-1 { grid-area: tarjeta-1;}
+.tarjeta-2 { grid-area: tarjeta-2;}
+.tarjeta-3 { grid-area: tarjeta-3;}
+.tarjeta-4 { grid-area: tarjeta-4;}
+.tarjeta-5 { grid-area: tarjeta-5;}
+.tarjeta-6 { grid-area: tarjeta-6;}
+
+.paginacion {
+	margin:20px 0;
+    
+}
+.paginacion ul {
+	list-style:none;
+	text-align: center;
+    
+}
+.paginacion ul li {
+	display:inline-block;
+	margin-right:10px;
+   
+}
+.paginacion ul li a {
+	display:block;
+	padding:10px 20px;
+	color:#fff;
+	background:#024959;
+	text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.paginacion ul li a:hover {
+	background:#037E8C;
+}
+.paginacion ul li .active {
+	background:#037E8C;
+	font-weight:bold;
+}

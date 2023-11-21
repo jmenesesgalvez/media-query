@@ -1,0 +1,182 @@
+#page {
+    display: grid;
+    width: 100%;
+    height: 250px;
+    grid-template-areas:
+      "head head"
+      "nav  main"
+      "foot  foot";
+    grid-template-rows: 70px 1fr 70px;
+    grid-template-columns: 250px 1fr;
+}
+
+#page > header {
+    grid-area: head;
+    background-color: #0866FF;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+
+    
+}
+.barra-nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-left: 3%;
+    
+}
+  
+.page > nav {
+    grid-area: nav;
+    background-color: gainsboro;
+}
+nav p {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+  
+  #page > main {
+    grid-area: main;
+    background-color: white;
+  }
+  
+  #page > footer {
+    grid-area: foot;
+    background-color: #0866FF;
+  }
+
+  .content {
+    display: grid;
+    grid-template-areas: "tarjeta-1 tarjeta-2 tarjeta-3"
+                         "tarjeta-4 tarjeta-5 tarjeta-6";                  
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    gap: 10px;             
+}
+
+.tarjeta-1 { grid-area: tarjeta-1;}
+.tarjeta-2 { grid-area: tarjeta-2;}
+.tarjeta-3 { grid-area: tarjeta-3;}
+.tarjeta-4 { grid-area: tarjeta-4;}
+.tarjeta-5 { grid-area: tarjeta-5;}
+.tarjeta-6 { grid-area: tarjeta-6;}
+
+.contenedor-tarjetas {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 500px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    
+}
+img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: #25527B;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    height: 40px;
+    width: 40%;  
+}
+
+h2 {
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+p {
+    color: #666;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.paginacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.paginacion ul {
+	list-style:none;
+	text-align: center;
+    
+}
+.paginacion ul li {
+	display:inline-block;
+	margin-right:20px;
+   
+}
+.paginacion ul li a {
+	display:block;
+	padding:10px 20px;
+	color:#fff;
+	background:#0866FF;
+	text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.paginacion ul li a:hover {
+	background:#25527B;
+}
+.paginacion ul li .active {
+	background:#25527B;
+	font-weight:bold;
+}
+.dropdown {
+    width: 200px;
+    display: flex;
+    padding: 20px;
+  }
+select > option{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+  .dropdown select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+select option {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+  .dropdown:after {
+    content: '\25BC'; 
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+  @media screen and (max-width: 300px) {
+        .media-q{
+            flex-direction: column;
+        }
+  }
